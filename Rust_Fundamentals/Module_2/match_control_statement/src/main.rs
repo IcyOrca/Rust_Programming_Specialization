@@ -7,7 +7,7 @@ fn main() {
     print!("Please, enter your name: ");
     
     io::stdout().flush().unwrap(); // Ensure the prompt appears before input
-    io::stdin().read_line(buf: &mut i_name).expect(msg: "Failed to read line");
+    io::stdin().read_line(&mut i_name).expect("Failed to read line");
 
     match i_name.trim() {
         "Alice" => println!("Hello, Alice!"),
