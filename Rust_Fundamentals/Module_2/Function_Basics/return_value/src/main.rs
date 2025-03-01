@@ -15,6 +15,6 @@ fn split_string(string: String, delimiter: char, field: usize) -> String {
 }
 
 fn main() {
-    let chunk : String = split_string("Abelha,Abacaxi,Azul e aa".to_string(), ',', 2);
+    let chunk : String = split_string(string -> "Abelha,Abacaxi,Azul".to_string(), ',', 2);
     println!("Chunk: {}", chunk); 
 }
