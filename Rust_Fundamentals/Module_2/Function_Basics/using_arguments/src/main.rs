@@ -1,4 +1,4 @@
-fn sum(numbers : Vec<f32>) -> f32 {
+fn sum(numbers : &[f32]) -> f32 {
 
     let mut result : f32 = 0.0;
 
@@ -10,7 +10,7 @@ fn sum(numbers : Vec<f32>) -> f32 {
 }
 
 fn main() {
-    let numbers : Vec<f32> = vec![1.3,4.5,6.7,8.9];
+    let numbers : &[f32] = &[1.3,4.5,6.7,8.9];
 
-    println!("Sum of numbers: {}", sum(numbers));
+    println!("Sum of numbers: {}", sum(&numbers));
 }
